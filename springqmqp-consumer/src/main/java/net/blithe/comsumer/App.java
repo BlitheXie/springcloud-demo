@@ -1,15 +1,11 @@
-package cn.blithe.gateway;
+package net.blithe.comsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.ArrayList;
-
 @SpringBootApplication
-public class GatewayApplication {
-
+public class App {
     public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class,args);
-
+        SpringApplication.run(App.class,args);
     }
 }

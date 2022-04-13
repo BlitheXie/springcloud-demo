@@ -13,6 +13,8 @@
         <module>eureka-server</module>
         <module>feign-api</module>
         <module>gateway</module>
+        <module>springamqp-demo</module>
+        <module>springqmqp-consumer</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -63,6 +65,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>2.3.9.RELEASE</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
@@ -70,6 +77,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <!--用于转换 json MessageConverter-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.11.4</version>
         </dependency>
     </dependencies>
 </project>
